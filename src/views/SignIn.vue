@@ -1,15 +1,17 @@
 <template>
-  <div>
+  <default-layout>
     Sign in page! <br />
     <button @click="signIn">Sign in with Google</button>
-  </div>
+  </default-layout>
 </template>
 
 <script>
+import DefaultLayout from "@/layouts/DefaultLayout";
 import {GoogleAuthProvider, signInWithPopup} from 'firebase/auth'
 import { firebaseAuth } from '../firebase'
 
 export default {
+  components: { DefaultLayout },
   methods: {
     signIn() {
         const provider = new GoogleAuthProvider()

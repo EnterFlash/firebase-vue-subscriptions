@@ -1,5 +1,13 @@
 <template>
-  <div>
+  <default-layout>
     Home page!
-  </div>
+  </default-layout>
 </template>
+
+<script>
+import DefaultLayout from "@/layouts/DefaultLayout";
+
+export default {
+  components: { DefaultLayout },
+};
+</script>
